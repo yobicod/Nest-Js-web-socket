@@ -26,7 +26,7 @@ export class MyGateway implements OnModuleInit {
       '🚀 ~ file: gateway.ts:12 ~ MyGateway ~ onNewMessage ~ body:',
       body,
     );
-    // emit to client who subscibe event
+    // emit to client who subscribe event
     this.server.emit('onMessage', {
       msg: 'New msg from server',
       content: body,
